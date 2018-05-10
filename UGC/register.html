@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Copyright 2017 HP.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        
+        <title>
+            Sign up
+        </title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <!--Custom CSS-->
+        <link href="css/custom_c.css" type="text/css" rel="stylesheet">
+        <!Bootstrap-->
+        <link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        
+    </head>
+    
+    <body onload="document.form.email.focus()">
+        <!--div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          <strong>N.B.</strong> All fields are mandatory
+        </div>-->
+        <div class="form-style-10">
+            <h1>Sign Up Now!</h1>
+            <form action='insert.php' method='post' name="form">
+            <div class="section"><span>1</span>First Name &amp; Address</div>
+            <div class="inner-wrap">
+                <label>Your Full Name <input type="text" name="u_name" /></label>
+                <label>Address <input type="text" name="address"/></label>
+		<label>City <input type="text" name="city"/></label>
+		<label>Country <input type="text" name="country"/></label>
+                <label>Post Code <input type="text" name="postcode"/></label>
+            </div>
+
+        <div class="section"><span>2</span>Email &amp; Phone</div>
+        <div class="inner-wrap">
+            <label>Email Address <input type="email" name="email" /></label>
+            <label>Phone Number <input type="text" name="ph_no" /></label>
+        </div>
+
+        <div class="section"><span>3</span>Password</div>
+        <div class="inner-wrap">
+            <label>Password <input type="password" name="password" required="required" /></label>
+            <label>Confirm Password <input type="password" name="password" required="required" /></label>
+        </div>
+        <div class="button-section">
+        <input type="submit" value="Sign Up" onclick="ValidateEmail(document.form.email)"/>
+        <span class="privacy-policy">
+            <input type="checkbox" name="field7">You agree to our <a href="terms.html">Terms and Policy</a>. 
+        </span>
+        </div>
+        </form>
+</div>
+        <script src="js/email-validation.js"></script>
+    </body>
+</html>

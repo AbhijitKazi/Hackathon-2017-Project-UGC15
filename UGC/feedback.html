@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Copyright 2017 HP.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+-->
+<html>
+    <head>
+        <title>Feedback</title>
+        
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+        
+        <!--Bootstrap CSS-->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--Custom CSS-->
+        <link href="css/custom_c.css" rel="stylesheet">
+        
+    </head>
+    <body onload="document.feedback.email.focus()">
+        <div class="panel panel-default">
+            <div class="panel-heading text-center">
+                <h3>Submit Feedback</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-style-10">
+                <form name="feedback" action="feedback.php" method="POST">
+                    <div class="section">
+                        <span></span>Personal Details
+                    </div>
+                    <div class="inner-wrap">
+                        <label>Name <input type="text" name="name"/></label>
+                        <label>Phone Number <input type="text" name="ph_no"/></label>
+                        <label>Email <input type="text" name="email" required="required"/></label>
+                    </div>
+                    <div class="section">
+                        <p>Please rate your experience from 1 to 5 (where 1 is the lowest and 5 is the highest</p>
+                    </div>
+                    <div class="inner-wrap">
+                        <label for="exp">Overall Experience: </label>
+                        <div class="radio row">
+                            <label for="exp1">
+                                <input id="exp1" name="exp" type="radio" value="poor">Poor
+                            </label>
+                            <label for="exp2">
+                                <input id="exp2" name="exp" type="radio" value="needs_improvement">Needs Improvement
+                            </label>
+                            <label for="exp3">
+                                <input id="exp3" name="exp" type="radio" value="fair">Fair
+                            </label>
+                            <label for="exp4">
+                                <input id="exp4" name="exp" type="radio" value="good">Good
+                            </label>
+                            <label for="exp5">
+                                <input id="exp5" name="exp" type="radio" value="excellant">Excellant
+                            </label>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <p>Please suggest us to make our services better</p>
+                    </div>
+                    <div class="inner-wrap controls">
+                        <textarea name="message" class="form-control"></textarea>
+                    </div>
+                    <div class="button-section">
+                        <input type="submit" value="Submit" onclick="ValidateEmail(document.feedback.email)"/>
+                    </div>
+                </form>
+                </div>
+            </div>
+            </div>
+        <script src="js/email-validation.js" type="text/javascript"></script>
+        <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!--Login JavaScript-->
+    <script src="js/index.js"></script>
+    <!--Email Validation JS-->
+    <script src="js/querybox.js.js" type="text/javascript"></script>
+    </body>
+</html>

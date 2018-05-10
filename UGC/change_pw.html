@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!license header>
+<html lang="en-US">
+    <title>
+            Change Password
+        </title>
+        
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        
+        <!--Bootstrap CSS-->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!--Custom CSS-->
+        <link href="css/custom_c.css" rel="stylesheet">
+        
+        <script type="text/javascript">
+            function Notice()
+            {
+                alert("Your Password is Updated: Please Log in again");
+            }
+        </script>
+        
+    </head>
+    
+    <body>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="text-center">Change Password</h3>
+            </div>
+            <div class="panel-body">
+                <div class="form-style-10">
+                    <h3>Change Password</h3>
+                    <form action="change_pw.php" method="post" name="pw_chg">
+                        <div class="inner-wrap">
+                            <label>Old Password <input type="password" name="password" required="required"></label>
+                            <label>New Password <input type="password" name="newpassword" required="required"></label>
+                            <div class="button-section">
+                                <input type="submit" value="Update">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
