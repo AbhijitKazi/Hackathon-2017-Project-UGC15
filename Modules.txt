@@ -1,0 +1,51 @@
+Project code: #UGC15 (To make the system responsive)
+I4C Code: 11446
+Team Name: AlphaOne
+
+The modules that are included in this project are as follows
+
+The whole system is divided into 3 parts
+	1. User
+	2. Administrator
+	3. Department
+
+
+~~USER~~
+The user has the following functionalities (sub modules)
+	1: Query Processing
+		a) Any user can search a query in FAQs simply by putting some keywords in the search box of the FAQ page.
+		b) If the keyword matches his/her query than his/her need is fulfilled immediately.
+		c) If the keyword doesn't matches any of the listed queries, a popup message will be displayed with a link to a query form where the user
+			can submit his/her query to the respective departments/Admin.
+		d) If the query is sent to a department, through the query form, then only that department can/will answer the query, that will reduce the overload
+			of the admin.
+	2: Query Status Tracking
+		a) An user will get a unique identifier (reference number) so that he/she can track the status of his/her query.
+	3: Complaint
+		a) Only a registered user can submit a complaint to any department or to the admin par se, where in the department official or the admin can
+			give a resolution to the complaint.
+	4: Complaint Status Tracking
+		a) An user will get a unique identifier (reference number) so that he/she can track the status of his/her complaint.
+	5: Feedback
+		a) Any user can send a feedback to the UGC with suggestion on specific areas.
+	6: Live Chat
+		a) We have also included a Live Chat feature so the online users can get ideas from experienced users/Admin/Any UGC officials.
+	7: Discussion Forum
+		a) A registered user will have access to a discussion forum where he/she can post a question.
+		b) However the functionalty is restricted and users will not be able to answer the questions. This is done to avoid unauthorised solutions or misleading ideas.
+
+~~Administrator~~
+The admin has the following functionalities (sub modules)
+		a) The admin will respond to the queries that are channelled to him/her or the queries that are not looked into by departments.
+		b) The admin will also be able to add/update/remove FAQs as per UGC requirements.
+		c) The admin will be able to add/update/remove another admin or a department into the system.
+		d) The admin will also be able to monitor the forum discussions and Live chat.
+		e) The admin can also handle the complaints if the department has not looked upon the complaint.
+		f) Reply to question in the discussion forum.
+
+~~Department~~
+The departments will have the following functonalities
+		a) The departments can handle the queries and complaints that are channelled to them.
+		b) Departments can also participate in the discussion forum.
+
+The system is made platform independent so that it can be viewed in any device regardless of the screen size.

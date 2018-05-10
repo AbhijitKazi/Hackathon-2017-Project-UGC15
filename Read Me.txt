@@ -1,0 +1,27 @@
+Team Name: AlphaOne
+Title: To make the system responsive (#UGC15)
+I4C ID: 11446
+College Name: Girijananda Chowdhury Institute of Management and Technology, Azara, Guwahati, Assam
+		PIN: 781017
+
+~Team Members~
+Abhijit Kazi (Team Leader)
+Bikram Nath (Member 1)
+Syeda Najmin Hussain (Member 2)
+Savera Sharma (Member 3)
+Dibyajyoti Changkakoti (Member 4)
+Niyar Talukdar (Member 5)
+
+Utpal Barman (Mentor 1)
+Adarsh Pradhan (Mentor 2)
+
+Technology Stack
+1. HTML
+2. CSS
+3. JavaScript
+4. PHP
+5. MySQL
+
+Tools used
+1. Netbeans
+2. XAMPP (Apache and MySQL Server)
